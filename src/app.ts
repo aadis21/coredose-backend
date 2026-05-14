@@ -36,7 +36,7 @@ app.use(
   cors({
     origin:
       process.env.NODE_ENV === 'production'
-        ? [process.env.FRONTEND_URL || 'https://coredose.com', 'https://coredose-admin.vercel.app']
+        ? [process.env.FRONTEND_URL || 'https://coredose.com', 'https://coredose-admin.vercel.app', 'https://coredose-frontend.vercel.app']
         : ['http://localhost:3000', 'http://localhost:3001'],
     credentials: true,
   })
